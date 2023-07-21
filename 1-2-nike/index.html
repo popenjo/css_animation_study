@@ -30,7 +30,11 @@
             width:100px; margin:0 10px; 
             display:flex; align-items:flex-end;
         }
-        #v_btn a img {width:100%;}
+        #v_btn a img {width:100%; transform-origin:right bottom;}/* (오리진 고정축) 방향값 위치값 */
+        #v_btn a img:hover {
+            transform:rotate(10deg); /* rotate 각도 */
+            transition:all 0.5s; /* 시간 */
+        }
     </style>
     <script>
         window.onload=function(){
