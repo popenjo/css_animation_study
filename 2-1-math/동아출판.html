@@ -42,10 +42,36 @@
         main #deco .obj5 {z-index:11; right:150px; bottom:0;}
         main #deco .obj6 {z-index:12; left:-50px; bottom:100px;}
         main #deco .obj7 {z-index:12; right:50px; top:-30px;}
+        main #deco .obj1 {animation:rotate 2s linear alternate infinite;}
+        main #deco .obj2 {animation:book 1s ease forwards;}
+        main #deco .obj3 {animation:op 1s ease 0.2s forwards;}
+        main #deco .obj4 {animation:bee 0.7s ease both;}
+        main #deco .obj5 {animation:rotate 1s linear alternate-reverse infinite;}
+        main #deco .obj6 {animation:scale 0.8s linear alternate infinite;}
+        main #deco .obj7 {animation:scale 0.5s linear alternate infinite;}
         
         /* 애니메이션 */
         
-
+        @keyframes book {
+            0% {transform:translateX(80px);}
+            100% {transform:translateX(0);}/* slate (위치) */
+        }
+        @keyframes op {
+            0% {transform:translate(80px 0);}
+            100% {transform:translate(-6px, -130px);}
+        }
+        @keyframes scale {
+            0% {transform:scale(1);}
+            100% {transform:scale(1.2);}
+        }
+        @keyframes bee {
+            0% {transform:rotate(0) translate(0, 0);}
+            100% {transform:rotate(60deg) translate(-140px, 500px);}
+        }
+        @keyframes rotate {
+            0% {transform:rotate(0);}
+            100% {transform:rotate(15deg);}
+        }
     </style>
 </head>
 <body>

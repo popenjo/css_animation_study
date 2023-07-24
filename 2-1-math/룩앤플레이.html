@@ -50,7 +50,19 @@
         main #visual #deco .obj9 {
             right:0; top:440px;
         }
-
+        
+        main #visual #deco .obj1 {
+            animation: bg1 5s linear alternate infinite;
+        }
+        main #visual #deco .obj2, .obj4 {
+            animation:star1 0.8s linear alternate infinite;
+        }
+        main #visual #deco .obj3, .obj6 {
+            animation:obj 2s linear alternate infinite;
+        }
+        main #visual #deco .obj7, .obj9 {
+            animation:star1 1s linear alternate-reverse infinite;
+        }
         main #book_center {
             position:absolute; 
             left:50%; bottom:-50px; margin-left:-181px;
@@ -69,7 +81,18 @@
         main .category a.active {background:#26bad7; color:#fff;}
 
         /* 애니메이션 */
-
+        @keyframes bg1 {
+            0% {transform:rotate(0);}
+            100% {transform:rotate(18deg);}
+        }
+        @keyframes star1 {
+            0% {transform:scale(1);}
+            100% {transform:scale(0.8);}
+        }
+        @keyframes obj {
+            0% {transform:rotate(0);}
+            100% {transform:rotate(20deg);}
+        }
     </style>
 </head>
 <body>
