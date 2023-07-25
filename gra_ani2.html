@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>그라디언트 애니메이션</title>
+    <style>
+        h1 {
+            font-weight:800;
+            font-size:5rem;
+            text-transform:uppercase;/* <- 대문자로 만드는법 */
+            background:linear-gradient(90deg, white, pink, coral, skyblue, lime);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+            background-size:400%;
+            animation:text_bg 4s linear alternate infinite;
+        }
+        @keyframes text_bg {
+            0% {background-position-x:10%;}
+            100% {background-position-x:90%;}
+        }
+    </style>
+</head>
+<body>
+    <h1>text gradient animation</h1>
+</body>
+</html>
